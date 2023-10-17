@@ -1,0 +1,10 @@
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+display: flex;
+width: 1440px;
+height: 600px;
+padding: 300px 1037px 103px 108px;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+gap: 27px;
+flex-shrink: 0;
