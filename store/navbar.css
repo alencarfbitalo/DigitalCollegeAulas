@@ -11,12 +11,10 @@
     gap: var(--spacing-normal);
     display: flex;
     padding: var(--spacing-normal);
-    border: solid 1px blue;
     justify-content: space-between;
   }
   
   .logo {
-    border: solid 1px red;
     text-align: center;
   }
   
@@ -46,7 +44,6 @@
     flex: 1;
     display: flex;
     justify-content: space-evenly;
-    border: solid 1px red;
     gap: var(--spacing-normal);
   }
   
@@ -59,5 +56,4 @@
   }
   
   .navbar-icons {
-    border: solid 1px red;
   }
