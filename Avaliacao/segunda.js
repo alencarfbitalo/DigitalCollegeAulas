@@ -15,7 +15,7 @@ if (numero % 2 === 0) {
 
 
 /*
-O código verifica se a variável numero é par. 
+O código verifica se a variável "numero" é par. 
 
 let; declare a variável.
 
