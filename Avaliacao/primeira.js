@@ -24,16 +24,16 @@ let c = parseFloat(prompt("Digite um valor para C:"))
 
     /* 
 
-    let; declare a variável.
+    let; Declara a variável.
 
     parseFloat; Analisa os valore.
 
-    Prompt; exibe uma caixa de diálogo que solicita a
+    Prompt; Exibe uma caixa de diálogo que solicita a
     entrada do usuário.
 
-    if; código a ser executado, se a condição 
+    if; Código a ser executado, se a condição 
     menor que for verdadeira.
 
-    else if; uma nova condição a ser testada.
+    else if; Nova condição a ser testada.
 
     */

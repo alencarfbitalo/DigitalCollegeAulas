@@ -17,16 +17,16 @@ if (numero % 2 === 0) {
 /*
 O código verifica se a variável "numero" é par. 
 
-let; declare a variável.
+let; Declara a variável.
 
 parseFloat; Analisa os valore.
 
-Prompt; exibe uma caixa de diálogo que solicita a
+Prompt; Exibe uma caixa de diálogo que solicita a
 entrada do usuário.
 
-if; código a ser executado, se a condição for par. VERDADEIRO
+if; Código a ser executado, se a condição for par. VERDADEIRO
 
-else; código a ser executado, se a condição for ímpar. FALSO
+else; Código a ser executado, se a condição for ímpar. FALSO
 
 A condição "numero" % 2 === 0 
 é uma expressão booleana que verifica 
