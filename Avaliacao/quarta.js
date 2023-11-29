@@ -44,6 +44,8 @@ function calcularAlturas(alturas) {
 
   /* "i" tera sobre as alturas para encontrar a menor e a maior altura */
   for (let i = 1; i < alturas.length; i++) {
+    /* Em JavaScript, a "length" propriedade é usada para obter o número de 
+    elementos em um array ou o número de caracteres em uma string. */
 
       // Verifica se a altura atual é menor que a "menorAltura" atual.
       if (alturas[i] < menorAltura) {
