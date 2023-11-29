@@ -26,8 +26,9 @@ function entradaUsuario() {
   let resultado = calcularAlturas(alturas);
 
   // Exibe os resultados
-  alert("Menor altura do grupo: " + resultado.menorAltura.toFixed(1) + " metros");
-  alert("Maior altura do grupo: " + resultado.maiorAltura.toFixed(1) + " metros");
+  alert("Menor altura do grupo: " + resultado.menorAltura.toFixed(2) + " metros");
+  //  O toFixed() método arredonda a string para um número especificado de casas decimais.
+  alert("Maior altura do grupo: " + resultado.maiorAltura.toFixed(2) + " metros");
 }
 
 // Chama a função principal
@@ -41,8 +42,7 @@ function calcularAlturas(alturas) {
   let menorAltura = alturas[0];
   let maiorAltura = alturas[0];
 
-  /*código a ser executado
-    "i" tera sobre as alturas para encontrar a menor e a maior altura*/
+  /* "i" tera sobre as alturas para encontrar a menor e a maior altura */
   for (let i = 1; i < alturas.length; i++) {
 
       // Verifica se a altura atual é menor que a "menorAltura" atual.

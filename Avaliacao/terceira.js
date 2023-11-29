@@ -4,10 +4,10 @@
 // Função para gerar e escrever números ímpares entre 100 e 200
 function numerosImpares() {
 
-    // chama variavel
+    // chama a variavel Inicio
    let inicio = 100;
     
-    // chama variavel Fim 
+    // chama a variavel Fim 
    let fim = 200;
     
     // Loop para verificar e escrever os números ímpares
@@ -26,7 +26,7 @@ function numerosImpares() {
 
   
   /*
-  o loop irá iterar do valor inicial até o valor do fime 
+  o loop irá iterar do valor inicial até o valor do fim e 
   imprimirá cada valor de "i" no console em cada iteração.
 
   function; executa uma tarefa específica
