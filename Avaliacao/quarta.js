@@ -27,7 +27,7 @@ function entradaUsuario() {
 
   // Exibe os resultados
   alert("Menor altura do grupo: " + resultado.menorAltura.toFixed(2) + " metros");
-  //  O toFixed() método arredonda a string para um número especificado de casas decimais.
+  // O toFixed() arredonda a string para um número especificado de casas decimais.
   alert("Maior altura do grupo: " + resultado.maiorAltura.toFixed(2) + " metros");
 }
 
@@ -44,7 +44,7 @@ function calcularAlturas(alturas) {
 
   /* "i" tera sobre as alturas para encontrar a menor e a maior altura */
   for (let i = 1; i < alturas.length; i++) {
-    /* Em JavaScript, a "length" propriedade é usada para obter o número de 
+    /* Em JavaScript, a "length" (comprimento) propriedade é usada para obter o número de 
     elementos em um array ou o número de caracteres em uma string. */
 
       // Verifica se a altura atual é menor que a "menorAltura" atual.
