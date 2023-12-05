@@ -23,7 +23,6 @@ let c = parseFloat(prompt("Digite um valor para C:"))
     
 
     /* 
-
     let; Declara a variável.
 
     parseFloat; Analisa os valore.
@@ -35,5 +34,4 @@ let c = parseFloat(prompt("Digite um valor para C:"))
     menor que for verdadeira.
 
     else if; Nova condição a ser testada.
-
     */
