@@ -1,7 +1,7 @@
 # DigitalCollegeAulas
 Aulas de Fullstack
 <br>
-Varios projetos realizados em sala aula, desenvolvendo e conhecendo tecnologias.
+Varios projetos realizados em sala de aula, desenvolvendo e conhecendo tecnologias.
 <br>
 
 ![Maintainer](https://img.shields.io/badge/License-MIT-orange)
