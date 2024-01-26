@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #eaeaea;
+        }
+
+        form {
+            background-color: #2c2c2c;
+            border-radius: 5px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .text-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .text-input {
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: #1f1f1f;
+            border-radius: 4px;
+            border: 1px solid #555;
+        }
+
+        .remember-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            background-color: #009bff;
+            border: none;
+            padding: 10px;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #007ab3;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Login</h1>
+
+        <!-- Email -->
+        <label class="text-label" for="email">E-mail</label>
+        <input class="text-input" id="email" type="text" placeholder="Digite seu e-mail">
+
+        <!-- Password -->
+        <label class="text-label" for="password">Senha</label>
+        <input class="text-input" id="password" type="password" placeholder="Digite sua senha">
+
+        <!-- Lembrar senha -->
+        <div class="remember-container">
+            <div>
+                <input type="checkbox" id="remember-password">
+                <label for="remember-password">Lembrar senha</label>
+            </div>
+            <a href="#">Esqueceu a senha?</a>
+        </div>
+
+        <!-- Esqueceu a senha -->
+
+        <!-- Entrar -->
+        <input type="submit" value="Entrar">
+        <p>Não possui uma conta? <a href="#">Criar</a></p>
+    </form>
+</body>
+
+</html>

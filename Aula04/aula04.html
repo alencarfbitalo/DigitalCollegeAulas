@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="aula04.css" />
+</head>
+<body>
+    <form>
+        <h1>Cadastro</h1>
+
+        <label for="nome">Nome: </label>
+        <input id="nome" type="text" />
+        <br><br>
+        <label for="password">Senha:</label>
+        <input id="password" type="password"> 
+        <br><br>
+        <label for="email">Email:</label>
+        <input id="email" type="email"> 
+        <br><br>
+        <label for="number">Idade:</label>
+        <input id="number" type="number"> 
+
+        <br><br>
+
+        <label for="data">Data de Nascimento:</label>
+        <input id="data" type="date" />
+        <br><br>
+        
+        <label for="curso">Curso:</label>
+        <select id="curso">
+            <option>Front-end</option>
+            <option>Back-end</option>
+            <option>Full-stack</option>
+        </select>
+
+        <br><br>
+        
+        <p>Gênero:</p>
+        <input id="gen1" type="radio" name="gen">
+        <label for="gen1">Masculino</label>
+        <br>
+        <input id="gen2" type="radio" name="gen">
+        <label for="gen2">Feminino</label>
+        <br>
+        <input id="gen3" type="radio" name="gen">
+        <label for="gen3">Outro</label>
+
+        <br><br>
+        <p>Experiência</p>
+        <input id="exp1" type="radio" name="exp">
+        <label for="exp1">Iniciante</label>
+        <br>
+        <input id="exp2" type="radio" name="exp">
+        <label for="exp2">Intermediário</label>
+        <br>
+        <input id="exp2" type="radio" name="exp">
+        <label for="exp2">Avançado</label>
+
+        <br><br>
+
+        <input id="idDoCheckbox" type="checkbox">
+        <label for="idDoCheckbox">Aceitos os termos</label>
+        
+        <br><br>
+
+        <input type="submit" value="Enviar">
+        
+
+        <br><br>
+
+        <details>
+            <summary>Por que precisamos dessas informações?</summary>
+            <p>Usamos seu nome para personalizar nossa comunicação</p>
+            <p>Seu e-mail é necessário para enviar confirmações e atualizações sobre sua inscrição</p>
+            <p>A data de nascimento nos ajuda a garantir que estamos fornecendo conteúdo apropriado para sua idade</p>
+            <p>Ao selecionar seu gênero e experiência, podemos adaptar melhor nossos materiais para atender às suas necessidades específicas.</p>
+        </details>
+    </form>
+</body>
+</html>

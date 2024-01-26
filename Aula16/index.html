@@ -1,37 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manipulando o DOM</title>
-    <link rel="stylesheet" type="text/css" href="stylenNumeros.css" />
-    <script src="script.js"></script>
+    <title>Lista Estilizada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
 
+        h2 {
+            color: #333;
+        }
+
+        #meuInput, button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #fff;
+            margin-top: 8px;
+            padding: 10px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        li button {
+            padding: 5px 10px;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        li button:hover {
+            background-color: #bd2130;
+        }
+    </style>
 </head>
+<body>
 
-    <div id="primeiradiv"> Olá Mundo!</div>
-    <div id="segundadiv"> Hello World!</div>
+    <h2>Minha Lista de Itens</h2>
+
+    <!-- Input e Botão -->
+    <input type="text" id="meuInput" placeholder="Adicione um item">
+    <button onclick="adicionarItem()">Adicionar</button>
+
+    <!-- Lista de Itens -->
+    <ul id="minhaLista">
+    </ul>
 
     <script>
-        //Manipulando o DOM
+        function adicionarItem() {
+            var input = document.getElementById("meuInput");
+            var novoItem = input.value;
+            if (novoItem !== '') {
+                var li = document.createElement("li");
+                li.textContent = novoItem;
 
-        //Por tag nome
-        //let divs = window.document.getElementsByTagName("div")
-        //let primeiradiv = divs[0]
-        //console.log(primeiradiv)
+                // Criar botão de delete
+                var deleteBtn = document.createElement("button");
+                deleteBtn.textContent = "Delete";
+                deleteBtn.onclick = function() {
+                    li.remove();
+                };
 
-        //Por ID 
-        //let div = window.document.getElementById(primeiradiv)
-        //let texto = prompt (Digite o texto)
-        //div innertText = Texto
+                li.appendChild(deleteBtn);
+                document.getElementById("minhaLista").appendChild(li);
+                input.value = '';
+            }
+        }
 
-        //Por seletor 
-        //let div = window.document.querySelector(#primeiradiv)
-        //console.log(primeira div)
+        // let tagA = document.getElementById("tagA")
+        // tagA.onclick = (e) => {
+        //     e.preventDefault()
+        // }
+
+        // let div = window.document.getElementById("divEvents")
+        // div.onclick = onClick
+        // div.onmousedown = onMouseDown
+
+        div.addEventListener("mouseenter", onMouseEnter)
+
+        // div.addEventListener("mouseout", () => {
+        //     div.innerText = "Mouse saiu"
+        // })
+
+        // div.addEventListener("click", () => { console.log("Click") })
+
+        // div.removeEventListener("click")
+
+        // div.addEventListener("mousedown", () => {
+        //     div.innerText = "Mouse down"
+        // })
+
+        // div.addEventListener("mouseup", () => {
+        //     div.innerText = "Mouse up"
+        // })
+
+        // function onMouseDown() {
+        //     let div = window.document.getElementById("divEvents")
+        //     div.innerText = "Mouse down!"
+        // }
+
+        // function onClick() {
+        //     let div = window.document.getElementById("divEvents")
+        //     div.innerText = "Click!"
+        // }
+
+        // function onMouseEnter() {
+        //     let div = window.document.getElementById("divEvents")
+        //     div.innerText = "Cursor entrou"
+        //     console.log("Mouse Enter")
+        // }
+
+        // let texto = prompt("Digite um texto")
+
+        // let nameInput = window.document.getElementById("name")
+        // nameInput.value = texto
+
+        // let emailInput = window.document.getElementById("email")
+        // emailInput.value = texto
+
+        // Por tag name
+        // let divs = window.document.getElementsByTagName("div")
+        // let primeiraDiv = divs[0]
+        // console.log(primeiraDiv)
+        
+        // Por ID
+        // let div = window.document.getElementById("primeiraDiv")
+        // let texto = prompt("Digite um texto")
+        // div.innerText = texto
+
+        // Por name
+        // let div = window.document.getElementsByName("segundaDivName")
+        // console.log(div[0].innerText)
+
+        // Por seletor
+        // let div = window.document.querySelector("#primeiraDiv")
+        // console.log(div.innerHTML)
+
+        // let div = window.document.getElementById("primeiraDiv")
+        // div.style = "background: red"
+
+        // let div2 = window.document.getElementById("segundaDiv")
+        // div2.style.background = "blue"
+
+        // console.log(div2.attributes)
+
+        // window.document.write(div.innerHTML)
     </script>
 
-
 </body>
-
 </html>
